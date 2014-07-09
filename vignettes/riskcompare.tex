@@ -1,0 +1,24 @@
+{\tiny
+\ctable[
+pos = h,
+cap     = {Properties of Risk/Deviation Measures.},
+caption = {Properties of Risk/Deviation Measures.},
+label   = {table:riskcompare},
+center
+]
+{lcccccccc}
+{
+\tnote[]{\tiny {\bf Note:} The Table presents some of the properties of the measures used in the \textbf{parma} package,
+where the definitions of the properties are defined in Section \ref{comparison}.
+\LL}
+}{
+\FL
+\begin{tabular*}{1\textwidth}{@{\extracolsep{\fill}}lcccccccc}
+& \multicolumn{1}{c}{\boldmath{}\textbf{$MAD$}\unboldmath{}} & \multicolumn{1}{c}{\boldmath{}\textbf{$V$}\unboldmath{}} & \multicolumn{1}{c}{\boldmath{}\textbf{$SD$}\unboldmath{}} & \multicolumn{1}{c}{\boldmath{}\textbf{$MiniMax$}\unboldmath{}} & \multicolumn{1}{c}{\boldmath{}\textbf{$CVaR$}\unboldmath{}} & \multicolumn{1}{c}{\boldmath{}\textbf{$CDaR$}\unboldmath{}} & \multicolumn{1}{c}{\boldmath{}\textbf{$LPM_{m,\tau=c}$}\unboldmath{}} & \multicolumn{1}{c}{\boldmath{}\textbf{$LPM_{m,\tau=\mu}$}\unboldmath{}} \\
+\boldmath{}\textbf{$Scaling$}\unboldmath{} & TRUE  & TRUE  & TRUE  & TRUE  & TRUE  & TRUE  & TRUE  & TRUE \\
+\boldmath{}\textbf{$Location^{1}$}\unboldmath{} & TRUE  & TRUE  & TRUE  & FALSE & FALSE & FALSE & FALSE  & FALSE \\
+\boldmath{}\textbf{$Location^{2}$}\unboldmath{} & FALSE & FALSE & FALSE & TRUE  & TRUE  & FALSE & TRUE & TRUE \\
+\boldmath{}\textbf{$Subadditivity$}\unboldmath{} & TRUE  & FALSE & TRUE  & TRUE  & TRUE  & TRUE  & FALSE & TRUE \\
+\end{tabular*}
+\LL
+}}

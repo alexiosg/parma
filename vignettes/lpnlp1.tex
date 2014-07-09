@@ -1,0 +1,26 @@
+{\tiny
+\ctable[
+pos = ht,
+cap     = {LP vs NLP Smooth Approximations (minrisk)},
+caption = {LP vs NLP Smooth Approximations (minrisk)},
+label   = {table:lpnlp1},
+center
+]
+{lcclcclcclcc}
+{
+\tnote[]{\tiny {\bf Note:} The Table reports the mean squared error (MSE), mean absolute error (MAE) and maximum error of the weights optimized
+under the NLP smooth approximation representation versus the exact LP formulation. The absolute error (AbsErr) in the optimized
+risk is also shown. The problem formulation was based on parma.test2 in the parma.tests folder of the \textbf{parma} package, using
+the ETF dataset with the objective of minimizing risk given an equality for the target return.
+\LL}
+}{
+\FL
+\begin{tabular*}{1\textwidth}{@{\extracolsep{\fill}}lccccc}
+      & \multicolumn{1}{c}{\textbf{MAD}} & \multicolumn{1}{c}{\textbf{MiniMax}} & \multicolumn{1}{c}{\textbf{CVaR}} & \multicolumn{1}{c}{\textbf{EV}} & \multicolumn{1}{c}{\textbf{LPM[1]}} \\
+\textbf{MSE[weights]} & 4.18E-13 & 3.66E-31 & 4.53E-16 & 3.71E-18 & 2.10E-17 \\
+\textbf{MAE[weights]} & 2.94E-07 & 2.81E-16 & 1.34E-08 & 1.03E-09 & 2.53E-09 \\
+\textbf{MaxE[weights]} & 2.20E-06 & 1.78E-15 & 4.74E-08 & 5.63E-09 & 1.23E-08 \\
+\textbf{AbsErr[risk]} & 1.37E-11 & 6.94E-17 & 2.04E-12 & 1.53E-08 & 1.85E-14 \\
+\end{tabular*}
+\LL
+}}

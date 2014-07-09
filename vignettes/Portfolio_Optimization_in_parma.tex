@@ -1,0 +1,41 @@
+%\VignetteIndexEntry{Portfolio Optimization in parma}
+%\VignetteKeywords{portfolio, optimization, finance}
+%\VignettePackage{parma}
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{anysize}
+\usepackage{amsfonts}
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{ctable}
+\usepackage{subfig}
+\usepackage{hyperref}
+\usepackage{color}
+\usepackage{natbib}
+\newtheorem{proof}{Proof}
+\bibliographystyle{plainnat}
+\usepackage{Sweave}
+\usepackage{graphicx}
+\begin{document}
+\title{Portfolio Optimization in \textbf{parma}\\
+(Version 1.5-0)}
+\author{Alexios Ghalanos}
+\date{\today}
+\maketitle
+\begin{abstract}
+The \textbf{p}ortfolio \textbf{a}llocation and \textbf{r}isk \textbf{m}anagement
+\textbf{a}pplications (\textbf{parma}) package provides a set of models and
+methods for use in the allocation and management of capital in financial portfolios.
+It uniquely represents certain discontinuous problems using their smooth approximation
+counterparts and implements fractional based programming for the direct optimization
+of risk-to-reward ratios. This paper forms an introduction to the models and methods.
+\end{abstract}
+\clearpage
+%\tableofcontents
+\newpage
+\input{parma.tex}
+\clearpage
+\bibliography{parmabib}
+\end{document}

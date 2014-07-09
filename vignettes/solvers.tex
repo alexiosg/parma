@@ -1,0 +1,41 @@
+{\tiny
+\ctable[
+pos = h,
+cap     = {Problems and Solvers in the \textbf{parma} package.},
+caption = {Problems and Solvers in the \textbf{parma} package.},
+label   = {table:solvers},
+center
+]
+{lcccccccc}
+{
+\tnote[]{\tiny {\bf Note:} The Table presents the types of problems which the \textbf{parma} package can solve based on the available solvers,  where
+\emph{T} means that a problem can be solved by the particular solver/type, \emph{F} that there is currently no available solver for this type of problem,
+and \emph{TBI} that a solver will be implemented for that particular problem in due course. Note that for the scenario based optimization, all risk measures
+which can be represented (without additional restrictions) as LP can also be represented as NLP,  with the exception of Conditional Drawdown at Risk for
+which only an LP formulation exists. The covariance based optimization refers to the EV model which may also be solved using a scenario model as NLP.
+\LL}
+}{
+\FL
+\begin{tabular*}{1\textwidth}{@{\extracolsep{\fill}}lcccccccc}
+\textbf{Problem Type} & \textbf{LP} & \textbf{MILP} & \textbf{QP} & \textbf{MIQP} & \textbf{QCQP} & \textbf{NLP} & \textbf{MINLP} & \textbf{GNLP} \\
+\textbf{Solver} & \textbf{Rglpk} & \textbf{Rglpk} & \textbf{quadprog} & \textbf{.} & \textbf{Rsocp} & \textbf{nloptr} & \textbf{.} & \textbf{cmaes/crs} \\
+\midrule  \relax
+\textbf{Scenario [minrisk]} & T     & T     & .     & .     & .     & T     & .     & T \\ \relax
++    LP custom constraints & T     & .     & .     & .     & .     & .     & .     & . \\ \relax
++ NLP custom constraints & .     & .     & .     & .     & .     & T     & .     & T \\   \relax
++   cardinality constraints & .     & T     & .     & .     & .     & .     & TBI   & T \\ \relax
+\textbf{Scenario optrisk} & T     & .     & .     & .     & .     & T     & .     & T \\ \relax
++    LP custom constraints & T     & .     & .     & .     & .     & .     & .     & . \\ \relax
++ NLP custom constraints & .     & .     & .     & .     & .     & T     & .     & T \\ \relax
++   cardinality constraints & .     & .     & .     & .     & .     & .     & .     & T \\ \relax
+\textbf{Covariance minrisk} & .     & .     & T     & .     & .     & .     & .     & . \\ \relax
++  LP custom constraints & .     & .     & T     & .     & .     & .     & .     & . \\ \relax
++   Q custom constraints & .     & .     & .     & .     & TBI   & .     & .     & . \\ \relax
++ cardinality constraints & .     & .     & .     & F     & .     & .     & .     & . \\ \relax
+\textbf{Covariance optrisk} & .     & .     & T     & .     & .     & .     & .     & . \\ \relax
++  LP custom constraints & .     & .     & T     & .     & .     & .     & .     & . \\ \relax
++   Q custom constraints & .     & .     & .     & .     & .     & .     & .     & . \\ \relax
++ cardinality constraints & .     & .     & .     & .     & .     & .     & .     & . \\ \relax
+\end{tabular*}
+\LL
+}}
