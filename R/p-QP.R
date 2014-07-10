@@ -68,7 +68,7 @@
 	} else{
 		Saux = S
 		forecast = matrix(forecast, ncol = m, nrow = 1)
-		if(index[1]==1){
+		if(index[3]==1){
 			.ineqx = parma.con.qpmin2(eq.mat, eqB = eqB, reward = NULL, rewardB = NULL, 
 					ineq = rbind(forecast, ineq.mat), ineqLB = c(target, ineq.LB), 
 					ineqUB = c(50000, ineq.UB), LB = LB, UB = UB, budget, m)
