@@ -1,5 +1,6 @@
-importFrom(stats, weights)
 import(methods)
+importFrom("stats", "weights","median", "na.omit", "nlminb", "pnorm", "quantile", "rbinom", "rnorm")
+importFrom("utils", "head", "tail")
 importFrom(nloptr, nloptr, nloptr.print.options)
 importFrom(FRAPO, Socp)
 importFrom(quadprog, solve.QP)
