@@ -215,13 +215,12 @@ vfun.risk = function(scenario, options, risk){
 
 simweights = function(m, LB = 0, UB = 1, budget=1, forecast=rep(0,m), constrain.positive = TRUE, rseed = NULL){
 	if(is.null(rseed)) rseed = as.integer(Sys.time())
-	if(!require(truncnorm)) stop("\ntruncnorm package required for weight simulation.")
 	bin = rbinom(m, 1, pnorm(rnorm(1)))
 	i=0
 	wx = rep(0, m)
 	while(i==0){
 		nb = sum(bin)
-		w = truncnorm::rtruncnorm(nb, a=LB, b=UB, mean = (UB-LB)/2, sd = (UB-LB)/3)
+		w = rtruncnorm(nb, a=LB, b=UB, mean = (UB-LB)/2, sd = (UB-LB)/3)
 		w = budget * (w/sum(w))
 		wx[as.logical(bin)] = w
 		if(constrain.positive){

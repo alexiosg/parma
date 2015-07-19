@@ -593,9 +593,9 @@ lpport = function(optvars, solver, ...)
 {
 	valid.solvers = c("glpk", "symphony")
 	solver = match.arg(tolower(solver), valid.solvers)
-	if(solver=="symphony"){
-		if(!require(Rsymphony)) stop("\nPackage 'Rsymphony' must be installed") 
-	}
+	#if(solver=="symphony"){
+	#	if(!requireNamespace(Rsymphony, quietly=TRUE)) stop("\nPackage 'Rsymphony' must be installed") 
+	#}
 	risk = c("mad", "minimax", "cvar", "cdar", "ev", "lpm", "lpmupm")[optvars$index[4]]
 	if(optvars$index[5] == 1){
 		setup = switch(risk,

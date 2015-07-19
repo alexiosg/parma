@@ -3,6 +3,7 @@ importFrom("stats", "weights","median", "na.omit", "nlminb", "pnorm", "quantile"
 importFrom("utils", "head", "tail")
 importFrom(nloptr, nloptr, nloptr.print.options)
 importFrom(FRAPO, Socp)
+importFrom(truncnorm, rtruncnorm)
 importFrom(quadprog, solve.QP)
 importFrom(Rglpk, Rglpk_solve_LP)
 importFrom(slam, as.simple_triplet_matrix)
