@@ -1,8 +1,8 @@
+useDynLib(parma)
 import(methods)
 importFrom("stats", "weights","median", "na.omit", "nlminb", "pnorm", "quantile", "rbinom", "rnorm")
 importFrom("utils", "head", "tail")
 importFrom(nloptr, nloptr, nloptr.print.options)
-importFrom(FRAPO, Socp)
 importFrom(truncnorm, rtruncnorm)
 importFrom(quadprog, solve.QP)
 importFrom(Rglpk, Rglpk_solve_LP)
@@ -15,6 +15,7 @@ exportMethods("checkarbitrage", "tictoc", "weights", "show")
 exportMethods("parmaset<-", "parmaget", "parmastatus")
 exportMethods("parmarisk", "parmareward")
 export("cmaes", "cmaes.control", "riskfun")
+export("Socp","SocpControl","SocpPhase1","SocpPhase2")
 export("ineqfun.turnover.min","ineqjac.turnover.min","ineqfun.bsturnover.min",
 "ineqjac.bsturnover.min","ineqfun.turnover.opt","ineqjac.turnover.opt",
 "ineqfun.bsturnover.opt","ineqjac.bsturnover.opt", "ineqfun.variance.opt",

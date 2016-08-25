@@ -1,3 +1,9 @@
+2016-08-25 Alexios Ghalanos <alexios$4dscape.com>
+	* DESCRIPTION (Version): version is 1.5-3
+	* Bernhard copied the socp solver from FRAPO (which removed it)
+	to parma to allow compatibility while we work on porting to the
+	new cccp solver.
+
 2015-07-02  Alexios Ghalanos <alexios@4dscape.com>
 	* DESCRIPTION (Version): version is 1.5-2.
 	* Fixed bug in QP spec where the targetType equality was
