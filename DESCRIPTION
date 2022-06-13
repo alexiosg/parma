@@ -23,3 +23,4 @@ Suggests: xts
 LazyLoad: yes
 LazyData: yes
 License: GPL-3
+URL: https://github.com/alexiosg/parma
