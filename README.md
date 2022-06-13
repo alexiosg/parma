@@ -1,5 +1,5 @@
 
-[![R-CMD-check](https://github.com/alexios/parma/workflows/R-CMD-check/badge.svg)](https://github.com/alexios/parma/actions)
+[![R-CMD-check](https://github.com/alexiosg/parma/workflows/R-CMD-check/badge.svg)](https://github.com/alexiosg/parma/actions)
 [![Last-changedate](https://img.shields.io/badge/last%20change-2022--06--13-yellowgreen.svg)](/commits/master)
 [![packageversion](https://img.shields.io/badge/Package%20version-1.6-orange.svg?style=flat-square)](commits/master)
 [![CRAN_Status_Badge](https://www.r-pkg.org/badges/version/parma)](https://cran.r-project.org/package=parma)
