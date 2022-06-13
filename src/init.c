@@ -1,16 +1,14 @@
-#include <R.h>
-#include <Rinternals.h>
+#include <stdlib.h> // for NULL
 #include <R_ext/Rdynload.h>
 
-extern void socp_getwork(int *, int *, int *, int *, int *, int *, int *, 
-                         int *, int *);
-extern int socp( int *, int *, int *, double *, double *, double *, double *,
-        double *, double *, double *, double *, int *, double *, int *, int *,
-        double *, double *, int *);
+/* .C calls */
+extern void socp(void *, void *, void *, void *, void *, void *, void *, void *, void *, void *, void *, void *, void *, void *, void *, void *, void *, void *);
+extern void socp_getwork(void *, void *, void *, void *, void *, void *, void *, void *, void *);
 
 static const R_CMethodDef CEntries[] = {
-    {"socp_getwork",    (DL_FUNC) &socp_getwork,    9},
-    {"socp",    (DL_FUNC) &socp,    18}
+    {"socp",         (DL_FUNC) &socp,         18},
+    {"socp_getwork", (DL_FUNC) &socp_getwork,  9},
+    {NULL, NULL, 0}
 };
 
 void R_init_parma(DllInfo *dll)
