@@ -52,7 +52,7 @@ strings which are evaluated on initialization of the solver.}
 }
 \details{
 This solver has been translated from the matlab version created by Nikolaus 
-Hansen and available on his website \url{http://www.lri.fr/~hansen/cmaes_inmatlab.html}.
+Hansen and available on his website \url{http://www.cmap.polytechnique.fr/~nikolaus.hansen/cmaes_inmatlab.html}.
 There is also a \pkg{cmaes} on CRAN but this does not offer the same level of
 options and flexibility that the matlab version offers. For more details on
 what the options mean and generally how the cmaes solver works, consult the 
