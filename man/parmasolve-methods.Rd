@@ -19,7 +19,7 @@ penalty = 1e4, eqSlack = 1e-05), ...)
 will indicate the available options).}
 \item{solver}{ For a GNLP type problem the choice of global solver, either
 \dQuote{cmaes} or \dQuote{crs} from the \code{nloptr} package. For LP type problems,
-either glpk or symphony.} 
+only glpk ic currently supported.} 
 \item{solver.control}{ A list with optional control parameters passed to the
 \code{nloptr} or \code{\link{cmaes}} solver.}
 \item{x0}{ Optional starting parameters for the NLP type problems. This 
