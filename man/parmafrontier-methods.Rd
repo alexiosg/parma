@@ -47,5 +47,5 @@ slam matrices and forcing garbage collection in intermediate setup steps of thes
 problems, there is no guarantee that memory will not be quickly depleted for
 large problems using many cores/sockets.
 }
-\author{Alexios Ghalanos}
+\author{Alexios Galanos}
 \keyword{methods}

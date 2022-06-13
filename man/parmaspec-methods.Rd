@@ -129,5 +129,5 @@ risk type \sQuote{optimal} AND cardinality constraints (\sQuote{max.pos}), and
 all problems with custom NLP constraints without derivatives, non-convex 
 inequalities or non-affine equalities.
 }
-\author{Alexios Ghalanos}
+\author{Alexios Galanos}
 \keyword{methods}

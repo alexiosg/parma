@@ -1,3 +1,6 @@
 /vignettes/*.eps
 ^.*\.Rproj$
 ^\.Rproj\.user$
+^\.github$
+REAMDE.Rmd
+README.md

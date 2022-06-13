@@ -50,7 +50,7 @@ Objects can be created by calls to \code{\link{parmasolve}.}.
       code for the LP and NLP solvers.}
 	 }
 }
-\author{Alexios Ghalanos}
+\author{Alexios Galanos}
 \examples{
 showClass("parmaPort")
 }

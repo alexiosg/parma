@@ -33,6 +33,6 @@ risk and deviation measures implemented in the package.
 A numeric value representing the risk/deviation measure.
 }
 \author{
-Alexios Ghalanos
+Alexios Galanos
 }
 \keyword{optimize}

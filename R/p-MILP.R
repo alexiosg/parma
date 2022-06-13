@@ -1,8 +1,8 @@
 #################################################################################
 ##
 ##   R package parma
-##   Alexios Ghalanos Copyright (C) 2012-2013 (<=Aug)
-##   Alexios Ghalanos and Bernhard Pfaff Copyright (C) 2013- (>Aug)
+##   Alexios Galanos Copyright (C) 2012-2013 (<=Aug)
+##   Alexios Galanos and Bernhard Pfaff Copyright (C) 2013- (>Aug)
 ##   This file is part of the R package parma.
 ##
 ##   The R package parma is free software: you can redistribute it and/or modify
@@ -24,7 +24,7 @@
 # Research Reference (Mixed Integer LP representation) : Konno, Tanaka, Yamamoto (2008)
 #--------------------------------------------------------------------------------
 # This expresses the fractional function as a MILP problem by applying the Charnes-Cooper Transformation
-# Alexios Ghalanos 2010
+# Alexios Galanos 2010
 
 # Completely unrealistic to expect to solve for scenario size>200 and alpha>0.01
 # (at least with GLPK...cplex has more power but still very difficult).

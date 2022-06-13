@@ -69,6 +69,6 @@ contains the fractional multiplier as well as other formulations which have
 additional decision variables).
 }
 \author{
-Alexios Ghalanos
+Alexios Galanos
 }
 \keyword{optimize}

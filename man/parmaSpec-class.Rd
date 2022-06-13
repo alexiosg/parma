@@ -36,7 +36,7 @@ Objects can be created by calls of the form \code{new("parmaSpec")}.
 	 }
 }
 
-\author{Alexios Ghalanos}
+\author{Alexios Galanos}
 \examples{
 showClass("parmaSpec")
 }

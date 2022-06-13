@@ -38,9 +38,9 @@ M2 (2-moment approximation), or M1, M2, M3 and M4 (4-moment approximation). Not
 many models generate M3 and M4, but the \dQuote{gogarch} model with manig or 
 magh distribution will.
 }
-\author{Alexios Ghalanos}
+\author{Alexios Galanos}
 \references{
-Ghalanos, A. and Rossi, E. and Urga, G. 2012, Independent Factor Autoregressive
+Galanos, A. and Rossi, E. and Urga, G. 2012, Independent Factor Autoregressive
 Conditional Density Model \emph{submitted-TBA}\cr
 }
 \keyword{methods}

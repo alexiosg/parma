@@ -48,5 +48,5 @@ For the GNLP type, the \sQuote{solver} allows for a choice of \dQuote{cmaes} or
 \dQuote{crs}, while the LP type there is a choice of \dQuote{glpk} or \dQuote{symphony}.
 Future development will likely expand on these choices.
 }
-\author{Alexios Ghalanos}
+\author{Alexios Galanos}
 \keyword{methods}

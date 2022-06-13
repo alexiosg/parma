@@ -1,4 +1,4 @@
-useDynLib(parma)
+useDynLib(parma,.registration = TRUE)
 import(methods)
 importFrom("stats", "weights","median", "na.omit", "nlminb", "pnorm", "quantile", "rbinom", "rnorm")
 importFrom("utils", "head", "tail")

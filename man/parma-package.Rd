@@ -45,17 +45,16 @@ optimization solver of Hansen (2006) with full features is implemented in
 \section{How to cite this package}{
   Whenever using this package, please cite as\cr
 
- \preformatted{@Manual{Ghalanos_2014,
- author       = {Alexios Ghalanos and Bernhard Pfaff},
+ \preformatted{@Manual{Galanos_2014,
+ author       = {Alexios Galanos and Bernhard Pfaff},
  title        = {{parma}: Portfolio Allocation and Risk Management Applications.},
  year         = {2014},
  note 	      = {R package version 1.5-1.},}}
-\emph{}
 }
 \section{License}{
   The releases of this package is licensed under GPL version 3.
 }
-\author{Alexios Ghalanos and Bernhard Pfaff}
+\author{Alexios Galanos and Bernhard Pfaff}
 \references{
 Charnes, A. and Cooper, W. 1962, Programming with linear fractional functionals,
 \emph{Naval Research Logistics Quarterly}, \bold{9}, 181--186.\cr
@@ -63,7 +62,7 @@ Dinkelbach, W. 1967, On nonlinear fractional programming, \emph{Management Scien
 \bold{13(7)}, 492--498.\cr
 Fishburn, P.C. 1977, Mean-risk analysis with risk associated with below-target 
 returns, \emph{The American Economic Review}, \bold{67(2)}, 116-126.\cr
-Ghalanos, A. 2012, Higher Moment Models for Risk and Portfolio Management, 
+Galanos, A. 2012, Higher Moment Models for Risk and Portfolio Management, 
 Thesis (submitted) \emph{Cass Business School}.\cr
 Hansen, N. 2006, The CMA Evolution Strategy: A Comparing Review, \emph{Towards 
 a New Evolutionary Computation (Studies in Fuzziness and Soft Computing)}, 

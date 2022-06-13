@@ -58,7 +58,7 @@ options and flexibility that the matlab version offers. For more details on
 what the options mean and generally how the cmaes solver works, consult the 
 relevant website and literature.
 }
-\author{Alexios Ghalanos}
+\author{Alexios Galanos}
 \references{
 Hansen, N. 2006, The CMA Evolution Strategy: A Comparing Review, \emph{Towards 
 a New Evolutionary Computation (Studies in Fuzziness and Soft Computing)}, 
