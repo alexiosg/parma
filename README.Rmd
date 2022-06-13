@@ -39,4 +39,4 @@ implemented as are basic mixed integer cardinality constraints. Finally, for
 non-convex problem formulations such as the upper to lower partial moments 
 function, global optimization methods using a penalty based method are available.
 
-The stable version is on CRAN.
+The stable version is on [CRAN](https://cran.r-project.org/web/packages/parma/index.html).
