@@ -39,21 +39,27 @@
 
 
 /* BLAS 1 */
-double ddot_( );
-void dcopy_( );
-void daxpy_( );
-void dscal_( );
+extern double ddot_(int *n, double *x, int *incx, double *y, int *incy);
+extern void dcopy_(int *n, double *x, int *incx, double *y, int *incy);
+extern void daxpy_(int *n, double *alpha, double *x, int *incx, double *y, int *incy);
+extern void dscal_(int *n, double *alpha, double *x, int *incx);
 
 /* BLAS 2 */
-void dgemv_( );
-void dsyr_( );
-
+extern void dgemv_(char *transa, int *m, int *n, double *alpha, double *a, int *lda, 
+            double *x, int *incx, double *beta, double *y, int *incy);
+extern void dsyr_(char *uplo, int *n, double *alpha, double *x, int *incx, double *a, 
+           int *lda);
 /* BLAS 3 */
-void dsyrk_( );
-
+extern void dsyrk_(char *uplo, char *trans, int *n, int *k, double *alpha, double *a, 
+            int *lda, double *beta, double *c, int *ldc);
 /* LAPACK */
-void dposvx_( );
-void dgelss_( );
+extern void dposvx_(char *fact, char *uplo, int *n, int *nrhs, double *a, int *lda, 
+                    double *af, int *ldaf, int *equed, double *s, double *b, 
+                    int *ldb, double *x, int *ldx, double *rcond, double *ferr, 
+                    double *berr, double *work, int *iwork, int *info);
+extern void dgelss_(int *m, int *n, int *nrhs, double *a, int *lda, double *b, 
+                    int *ldb, double *s, double *rcond, int *rank, double *work, 
+                    int *lwork, int *info);
 
 
 

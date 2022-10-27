@@ -1,8 +1,8 @@
 Package: parma
 Type: Package
 Title: Portfolio Allocation and Risk Management Applications
-Version: 1.6
-Date: 2022-06-13
+Version: 1.7
+Date: 2022-10-27
 Authors@R: c(person("Alexios", "Galanos", email =
         "alexios@4dscape.com", role = c("aut", "cre")),
 	person("Bernhard", "Pfaff", email =

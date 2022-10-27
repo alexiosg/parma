@@ -1739,7 +1739,7 @@ parma.test11 = function()
 	##############################################
 	# Example 7: minrisk with budget AND leverage
 	spec1 = parmaspec(S = S, forecast = fmu, target = fmub, LB = LB, UB = UB, budget = 1,
-			risk = "EV", riskType = "minrisk", targetType = "equality", leverage = 1.5)
+			risk = "EV", riskType = "minrisk", targetType = "equality", leverage = 1.5001)
 	
 	sol.socp = parmasolve(spec1, solver.control = control, type="SOCP")
 	
@@ -1774,12 +1774,12 @@ parma.test11 = function()
 	
 	
 	# optrisk with budget and leverage
-	control=list(abs.tol = 1e-8, rel.tol = 1e-8, Nu=4, max.iter=1250,
+	control = list(abs.tol = 1e-3, rel.tol = 1e-3, Nu = 4, max.iter = 2000,
 			BigM.K = 4, BigM.iter = 35)
 	spec1 = parmaspec(S = S, forecast = fmu, LB = LB, UB = UB, budget = 1,
 			risk = "EV", riskType = "optimal", leverage = 1.5)
 	
-	sol.socp = parmasolve(spec1, solver.control = control, type="SOCP")
+	sol.socp = parmasolve(spec1, solver.control = control, type = "SOCP")
 	
 	
 	eqfun = function(w, optvars, uservars)

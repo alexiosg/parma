@@ -1,3 +1,7 @@
+2022-10-27 Alexios Galanos <alexios$4dscape.com>
+	* DESCRIPTION (Version): version is 1.7
+	* Fix to socp C files to avoid warnings on CRAN.
+	
 2022-06-13 Alexios Galanos <alexios$4dscape.com>
 	* DESCRIPTION (Version): version is 1.6
 	* Added init.c file and fix to documentation to avoid warnings on CRAN.
