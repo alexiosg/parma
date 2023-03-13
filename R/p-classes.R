@@ -16,13 +16,7 @@
 ##   GNU General Public License for more details.
 ##
 #################################################################################
-setClass("parmaSpec", 
-		representation(
-				model = "vector", 
-				modeldata  = "vector",
-				constraints = "vector"))
+setClass("parmaSpec", representation(model = "vector", modeldata = "vector",
+    constraints = "vector"))
 
-setClass("parmaPort", 
-		representation(
-				solution = "vector", 
-				model = "vector"))
+setClass("parmaPort", representation(solution = "vector", model = "vector"))
