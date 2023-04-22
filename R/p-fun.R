@@ -243,7 +243,7 @@ simweights <- function(m, LB = 0, UB = 1, budget = 1, forecast = rep(0,
 }
 
 is.even <- function(x) {
-    as.logical((round(x) + 1) %% 2)s
+    as.logical((round(x) + 1) %% 2)
 }
 
 .logtransform <- function(x, LB, UB) {
