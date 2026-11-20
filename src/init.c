@@ -2,8 +2,8 @@
 #include <R_ext/Rdynload.h>
 
 /* .C calls */
-extern void socp(void *, void *, void *, void *, void *, void *, void *, void *, void *, void *, void *, void *, void *, void *, void *, void *, void *, void *);
-extern void socp_getwork(void *, void *, void *, void *, void *, void *, void *, void *, void *);
+extern int socp(int *, int *, int *, double *, double *, double *, double *, double *, double *, double *, double *, int *, double *, int *, int *, double *, double *, int *);
+extern void socp_getwork(int *, int *, int *, int *, int *, int *, int *, int *, int *);
 
 static const R_CMethodDef CEntries[] = {
     {"socp",         (DL_FUNC) &socp,         18},
